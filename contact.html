@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Being A Goddess</title>
+    <meta name="description" content="Get in touch with Being A Goddess. We'd love to hear from you about our African fashion range.">
+    <meta name="keywords" content="contact, Being A Goddess, African fashion, women's wear, customer support">
+    <meta name="author" content="Being A Goddess">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<!-- ===== HEADER =====-->
+<header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="index.html" class="nav__logo">Being A Goddess</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="promotions.html" class="nav__link">Promotions</a></li>
+                <li class="nav__item"><a href="products.html" class="nav__link">Products</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link active-link">Contact</a></li>
+                <li class="nav__item cart-icon-wrapper">
+                    <a href="cart.html" class="nav__link"><i class='bx bx-cart'></i><span class="cart-count">0</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+
+<main class="l-main">
+    <section class="contact bd-grid" id="contact">
+        <h2 class="contact__title">Contact Us</h2>
+        <p class="contact__description">We'd love to hear from you! Fill out the form below, or use the contact details to reach out to us directly.</p>
+
+        <div class="contact__details">
+            <div class="contact__detail-item">
+                <h3>General Inquiries</h3>
+                <p><strong>Email:</strong> <a href="mailto:info@beingagoddess.com">info@beingagoddess.com</a></p>
+                <p><strong>Phone:</strong> 011 554 66987</p>
+            </div>
+            <div class="contact__detail-item">
+                <h3>Our Office</h3>
+                <p><strong>Address:</strong> 123 Goddess Street, Fashion District, Johannesburg, South Africa</p>
+            </div>
+            <div class="contact__detail-item">
+                <h3>Business Hours</h3>
+                <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+                <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                <p><strong>Sunday:</strong> Closed</p>
+            </div>
+        </div>
+
+        <h3 class="contact__form-title">Send Us A Message</h3>
+        <form class="contact__form" id="contactForm">
+            <div class="contact__input-group">
+                <input type="text" id="name" name="name" class="contact__input" placeholder="Your Name" required>
+            </div>
+            <div class="contact__input-group">
+                <input type="email" id="email" name="email" class="contact__input" placeholder="Your Email" required>
+            </div>
+            <div class="contact__input-group">
+                <textarea id="message" name="message" class="contact__input contact__textarea" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="button">Send Message</button>
+            <p id="formResponse" style="margin-top: 1rem;"></p>
+        </form>
+
+        <!-- Map -->
+        <div class="contact__map">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
+    </section>
+</main>
+
+<!-- ===== FOOTER =====-->
+<footer class="footer-advanced">
+  <div class="footer-container bd-grid">
+    <!-- Column 1: Logo and Info -->
+    <div class="footer-column">
+      <h3 class="footer-logo">Being A Goddess</h3>
+      <p class="footer-text">
+        Embrace your inner goddess with authentic African fashion. We design with elegance, pride, and power.
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Newsletter -->
+    <div class="footer-column">
+      <h4>Join Our Newsletter</h4>
+      <p class="footer-text">Stay updated on new arrivals, promotions, and exclusive offers.</p>
+      <form id="newsletter-form">
+        <input type="email" placeholder="Enter your email" required class="footer-input" />
+        <button type="submit" class="footer-btn">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Column 4: Social Media -->
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Being A Goddess. Designed with ❤️ in South Africa.</p>
+  </div>
+</footer>
+
+
+<script>
+    // JavaScript validation and AJAX
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const response = document.getElementById("formResponse");
+
+        if (!name || !email || !message) {
+            response.textContent = "All fields are required.";
+            response.style.color = "red";
+            return;
+        }
+
+        // Simulate AJAX form submission
+        fetch("https://example.com/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name, email, message }),
+        })
+        .then(res => {
+            if (res.ok) {
+                response.textContent = "Message sent successfully!";
+                response.style.color = "green";
+                document.getElementById("contactForm").reset();
+            } else {
+                throw new Error("Failed to send message.");
+            }
+        })
+        .catch(() => {
+            response.textContent = "An error occurred. Please try again.";
+            response.style.color = "red";
+        });
+    });
+
+    // Update cart count on page load
+    window.addEventListener("DOMContentLoaded", () => {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const count = cart.reduce((total, item) => total + item.quantity, 0);
+        document.querySelectorAll(".cart-count").forEach(el => el.textContent = count);
+    });
+</script>
+
+</body>
+</html>
